@@ -1,0 +1,533 @@
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --background-color: #fcfcfd;
+    --primary-color: #030E4F;
+    --secondary-color: #244d8f;
+    --line-height: 27px;
+    --transition: 0.5s ease;
+    --hover: 18px;
+}
+
+@media (min-width: 601px) {
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+    transition: var(--transition);
+    margin: 10px 100px;
+    padding: 5px;
+}
+
+p {
+    line-height: var(--line-height);
+    filter: opacity(0.60);
+}
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.bars {
+    background-color: var(--primary-color);
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown a:hover {
+    border: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px  var(--secondary-color);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: left;
+    color: var(--primary-color);
+    padding: 12px 16px 12px 0;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+li .dropdown-content a:hover {
+    border: none;
+    color: var(--secondary-color);
+    font-size: var(--normal-font);
+    padding: 0;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li a:hover{
+    border: solid 2px var(--secondary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    padding: 3px 12px;
+    font-size: var(--hover);
+}
+
+.creativity {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 50px 5px 10px 0;
+}
+
+.creativity a{
+    padding: 20px 20px 20px 0px;
+    font-weight: bold;
+}
+
+.creativity a:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.intro-text1 {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 180px 100px 180px;
+    padding-right: 5px;
+    font-size: 32px;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 900;
+    color: gray;
+    filter: opacity(0.3);
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.H2 {
+    color: var(--primary-color);
+    font-size: 36px;
+    padding-top: 20px;
+}
+.h2 {
+    color: var(--primary-color);
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.services-text a {
+    color: var(--secondary-color);
+    border: 1px solid rgb(204, 204, 216);
+    background-color: rgb(209, 209, 224);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.intro-text2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.explore-link a{
+    border: 2px solid var(--secondary-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.explore-link a:hover {
+    border: 2px solid var(--secondary-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-decoration: underline;
+}
+.column {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.column-styling {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.column-styling a{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.column-styling a:hover {
+    border: 2px solid var(--background-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--background-color);
+    padding: 5px 10px;
+    text-decoration: underline;
+}
+
+.column-styling:hover {
+    box-shadow: -5px 4px 18px 5px #0e377a5b;
+    transition: var(--transition);
+    background-color: white;
+}
+.collaboration {
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 50px 5px 100px 0;
+}
+
+.collab > a {
+    color: var(--secondary-color);
+    border: 1px solid rgb(204, 204, 216);
+    background-color: rgb(209, 209, 224);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.reporting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.report > a {
+    color: var(--secondary-color);
+    border: 1px solid rgb(204, 204, 216);
+    background-color: rgb(209, 209, 224);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.insights {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+
+.insights-text > a {
+    color: var(--secondary-color);
+    border: 1px solid rgb(204, 204, 216);
+    background-color: rgb(209, 209, 224);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.free-trial {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--secondary-color);
+    margin-top: 200px;
+    padding: 50px 0px 50px 0px;
+    background-color: var(--secondary-color);
+    color: white;
+    margin-bottom: 100px;
+}
+
+.free-trial_text {
+    padding: 50px;
+}
+
+.free-trial_text > p {
+    color: white;
+    filter: opacity(1);
+}
+
+.submit {
+    border: 2px solid orange;
+    background-color: orange;
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+}
+
+.submit:hover {
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.email {
+    border: 2px solid white;
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.cancel-subscription a {
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    font-weight: bold;
+}
+
+.cancel-subscription {
+    font-size: smaller;
+}
+
+.collaborate-better {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.c_better-text a {
+    color: var(--secondary-color);
+    border: 1px solid rgb(204, 204, 216);
+    background-color: rgb(209, 209, 224);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sub-head {
+    padding: 5px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.c_better-text p {
+    padding: 5px;
+    color: var(--secondary-color);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li {
+    padding: 5px;
+}
+
+.Testimonials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.testimonials-text > a {
+    color: var(--secondary-color);
+    border: 1px solid rgb(204, 204, 216);
+    background-color: rgb(209, 209, 224);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.column-styling2a {
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    padding: 25px 40px 25px 40px;
+    margin-right: -80px;
+    color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+.column-styling2b {
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    padding: 25px 40px 25px 40px;
+    color: var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+.column-styling2a:hover, .column-styling2b:hover {
+    padding-bottom: 50px;
+    box-shadow: 0px 4px 16px 0px #0e377a85;
+    transition: var(--transition);
+    background-color: white;
+}
+
+.profilepicture > img {
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+}
+
+.profilepicture {
+    padding-top: 30px;
+}
+
+hr {
+    margin-top: 30px;
+}
+
+.profile {
+    display: flex;
+}
+
+.about-profile {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.name  {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 14px;
+}
+
+.create-account {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 50px 20px;
+    padding: 50px 20px;
+    border: 1px solid rgb(204, 204, 216);
+    background-color: rgb(209, 209, 224);
+}
+
+.create-account-links {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.create-account-links > a {
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.create-account-links >a:hover {
+    border: 2px solid var(--secondary-color);
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    text-decoration: underline;
+}
+
+.product > img {
+    width: 40px;
+    height: auto;
+    padding: 10px;
+}
+.footer li a:hover {
+    border: none;
+    text-decoration: underline;
+    padding: 0;
+}
+.footer2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer2 > p {
+    color: var(--secondary-color);
+}
+}
+@media (max-width: 600px) {
+section {
+    display: block;
+    text-align: center;
+}
+
+.images > img {
+    width: 200px;
+    height: auto;
+    border: 2px solid var(--background-color);
+    border-radius: 50%;
+}
+
+#bars > span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: var(--primary-color);
+}
+
+#bars > span:not(:last-child){
+    margin-bottom: 7px;
+}
+
+#bar, #bar > span {
+    transition: all .4s ease-in-out;
+}
+}
